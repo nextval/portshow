@@ -1,0 +1,208 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+<title>miniStory.html</title>
+</head>
+<style>
+
+html{
+width: 100%;
+height: 100%;
+background-color:white;
+}
+
+body {
+width: 100%;
+height: 100%; /* auto에서 100으로변경 */
+margin: 0;
+background-color: white;
+text-align: center;
+font-family: Verdana, sans-serif;
+}
+
+/* header{
+width:100%;
+height: 10%;
+margin: 30px;
+position: fixed;
+} */
+
+ul {
+  width:100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /*ul아우터에는 li가 있는데 li의 길이가 ul보다 넘친다면 주위에 있는건> 감춰달라*/
+  background-color: Tan;
+  height:/* 60px; */ 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+margin: 5px;
+width: 150px;
+height: 40px;
+font-size: 16px;
+float: right;
+background-color: LightSeaGreen;
+color: white;
+border: none;
+border-radius: 17px;
+cursor: pointer;
+}
+
+li {
+  float: left;  /*왼쪽부터 흐르듯이 정렬(왼쪽>오른쪽)*/
+  width: 210px;
+}
+
+
+li a, .dropbtn {
+/*   display: inline-block; */
+  font-size: 21px;
+  color: black;
+  padding: 15px 29px;
+  text-decoration: none;
+  width: 95px;
+  display:block;
+  height: 10px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+/*   background-color: white; */
+}
+
+li.dropdown { /*서브있는 메인목록*/
+  display: inline-block;
+}
+
+.dropdown-content { /*링크 목록을 감싸는*/
+  display: none;
+  position: absolute; /*목록의 위치 지정*/
+  min-width: 160px; /*최소크기가 160px*/
+  z-index: 1;
+}
+
+.dropdown-content a { /*서브메뉴목록에 마우스올렸을 때*/
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.dropdown-content a:hover {
+/* background-color: #f1f1f1; */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+section{
+width: 100%;
+height:/* 550px; */ 830px;
+margin: 0;
+background-color: white;
+}
+
+footer{
+width:100%;
+height: 170px;
+margin:/*  0px 0px ; */ auto;
+background-color: Tan;
+}
+/* ========================== */
+
+table, th {
+border-collapse: collapse;
+padding: 50px;
+}
+
+.storyImg {
+width: 550px;
+height: 600px;
+padding: 40px;
+}
+
+.txt {
+line-height: 42px;
+text-align: justify;
+font-size: 17px;
+}
+
+p{
+font-size: 35px;
+font-weight: bold;
+vertical-align: top;
+}
+
+
+</style>
+
+<body>
+
+<div id="ul">
+<ul>
+  <li><a href="miniIndex.html">HOME</a></li>
+  <li><a href="miniStory.html">STORY</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">MENU</a>
+    <div class="dropdown-content">
+      <a href="miniJuice.html">음료</a>
+      <a href="miniDesert.html">디저트</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">STORE</a>
+      <div class="dropdown-content">
+      <a href="miniStore.html">매장찾기</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">MY PAGE</a>
+      <div class="dropdown-content">
+      <a href="miniLog.html">로그인</a>
+	  <a href="miniMember.html">회원가입</a>
+    </div>
+  </li>
+<input type="button" class="button" value="가맹문의">
+</ul>
+</div>
+
+<section><!--스토리-->
+<table>
+<tr>
+<th><img src="./img/coffee.gif" class="storyImg"></th>
+<th class="txt">
+<p>Coffee ...</p>
+Almost all my middle-aged and elderly acquaintances, including me, feel about 25, unless we haven't had our coffee, in which case we feel 107. -Martha Beck- <br>
+내가 아는 중년과 노년의 지인들은 나를 포함해 커피를 마시지 않을 때를 제외하면 25살 같은 느낌으로 살고 있다. 이 커피를 마시지 않을 때는 107살 정도는 먹은 느낌이지만 <br>
+Coffee is a beverage that puts one to sleep when not drank. -Alphonse Allais-<br>
+커피는 마시지 않으면 우리를 잠들게 만드는 음료이다<br>
+Good communications is just ad stimulating as black coffr, and just as hard to sleep atfer.
+-Anne Morrow Lindbergh-<br>
+즐거운 대화는 블랙커피처럼 자극적이어서, 대화가 끝난 후에 잠을 설치게 만드는 것이다<br><br><br><br>
+
+</th>
+</tr>
+</table>
+
+</section>
+
+<footer>
+	<br>
+	<span>주식회사 앤하우스</span><br>
+	<span>대표자 김대영</span><br>
+	<span>사업자등록번호 105-88-51247</span><br>
+	<span>서울시 강남구 강남대로 518 11층, 13층 (주)앤하우스</span><br>
+	<고객센터 1555-0000><br>
+	<span>Copyright© by Caffebene, All rights reserved.</span>
+</footer>
+
+</body>
+</html>

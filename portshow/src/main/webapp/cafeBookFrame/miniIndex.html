@@ -1,0 +1,71 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+<title>miniIndex.html</title>
+<link rel="stylesheet" href="./css/miniProject.css">
+</head>
+<body>
+
+<div id="ul">
+<ul>
+  <li><a href="miniIndex.html">HOME</a></li>
+  <li><a href="miniStory.html">STORY</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">MENU</a>
+    <div class="dropdown-content">
+      <a href="miniJuice.html">음료</a>
+      <a href="miniDesert.html">디저트</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">STORE</a>
+      <div class="dropdown-content">
+      <a href="miniStore.html">매장찾기</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">MY PAGE</a>
+      <div class="dropdown-content">
+      <a href="miniLog.html">로그인</a>
+	  <a href="miniMember.html">회원가입</a>
+    </div>
+  </li>
+<input type="button" class="button" value="가맹문의">
+</ul>
+</div>
+
+<section>
+<img src="img/co1.jpg" onmouseover="cngImg();" onmouseout="clearTimeout(myVar)">
+ </section>
+
+<footer>
+	<br>
+	<span>주식회사 앤하우스</span><br>
+	<span>대표자 김대영</span><br>
+	<span>사업자등록번호 105-88-51247</span><br>
+	<span>서울시 강남구 강남대로 518 11층, 13층 (주)앤하우스</span><br>
+	<span><고객센터 1555-0000><br>
+	<span>Copyright© by Caffebene, All rights reserved.</span>
+</footer>
+
+</body>
+
+<script>
+var arryImg = ["img/de4.jpg",  "img/co3.jpg", "img/de1.jpg", "img/co4.jpg", "img/de2.jpg","img/de3.jpg", "img/co1.jpg"];
+var i=0;
+let myVar;
+
+function cngImg(){
+//	alert('hh')
+if( i != arryImg.length){ //i가 arryImg의 길이가 아니라면
+	document.getElementsByTagName("img")[0].src= arryImg[i]; //인덱스0번의 이미지를 가져온다
+	myVar=setTimeout(cngImg, 2000); 
+		i++;
+	} else{
+		i=0; //i초기화 >> 계속 반복
+		myVar=setTimeout(cngImg, 2000); 
+	}
+}
+</script>
+</html>

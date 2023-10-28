@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cafeBottom.jspf</title>
+<link rel="stylesheet" href="./cafeBookFrame/css/cafeBottom.css">
+</head>
+	<div id="bottom">
+	<br>
+	<span>주식회사 아이트스쿨정보보호교육원</span><br>
+	<span>대표 안석진</span><br>
+	<span>사업자등록번호 105-88-51247</span><br>
+	<span>대전 서구 계룡로 637 정일빌딩 3층, 7층</span><br>
+	<span><고객센터 0507-1347-9394-26451><br>
+	<span>Copyright© by Caffebene, All rights reserved.</span>	
+	</div>
+</html>

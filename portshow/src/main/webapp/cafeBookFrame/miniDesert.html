@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>miniDesert.html</title>
+</head>
+<style>
+html{
+width: 100%;
+height: 100%;
+background-color:white;
+}
+
+body {
+width: 100%;
+height: 100%; /* auto에서 100으로변경 */
+margin: 0;
+padding: 0;
+background-color: white;
+text-align: center;
+font-family: Verdana, sans-serif;
+}
+
+/* header{
+width:100%;
+height: 10%;
+margin: 30px;
+position: fixed;
+} */
+
+ul {
+  width:100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /*ul아우터에는 li가 있는데 li의 길이가 ul보다 넘친다면 주위에 있는건> 감춰달라*/
+  background-color: Tan;
+  height:/* 60px; */ 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+margin: 5px;
+width: 150px;
+height: 40px;
+font-size: 16px;
+float: right;
+background-color: LightSeaGreen;
+color: white;
+border: none;
+border-radius: 17px;
+cursor: pointer;
+}
+
+li {
+  float: left;  /*왼쪽부터 흐르듯이 정렬(왼쪽>오른쪽)*/
+  width: 210px;
+}
+
+
+li a, .dropbtn {
+/*   display: inline-block; */
+  font-size: 21px;
+  color: black;
+  padding: 15px 29px;
+  text-decoration: none;
+  width: 95px;
+  display:block;
+  height: 10px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+/*   background-color: white; */
+}
+
+li.dropdown { /*서브있는 메인목록*/
+  display: inline-block;
+}
+
+.dropdown-content { /*링크 목록을 감싸는*/
+  display: none;
+  position: absolute; /*목록의 위치 지정*/
+  min-width: 160px; /*최소크기가 160px*/
+  z-index: 1;
+}
+
+.dropdown-content a { /*서브메뉴목록에 마우스올렸을 때*/
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.dropdown-content a:hover {
+/* background-color: #f1f1f1; */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+section{
+width: 100%;
+height:/* 550px; */ 830px;
+margin: 0;
+background-color: white;
+}
+
+footer{
+width:100%;
+height: 170px;
+margin:/*  0px 0px ; */ auto;
+background-color: Tan;
+}
+
+img{
+width: 100%;
+height: 100%;
+position: relative; /*position주고 방향으로 테이블위치조정*/
+bottom: -0px;
+}
+/* ========================== */
+
+table {
+padding: 48px;
+border-spacing: 50px;
+margin: auto; /*테이블 화면 중앙정렬: margin:auto + 너비 간격*/
+border: none;
+}
+
+th{
+border-spacing: 50px;
+margin: auto; /*테이블 화면 중앙정렬: margin:auto + 너비 간격*/
+border: 2px solid #f2f2f2; 
+background-color: #f2f2f2;
+}
+
+.img {
+width: 245px;
+height: 220px;
+object-fit: cover;/*가로세로 비율은 유지하면서 컨테이너에 꽉 차도록 설정됨*/
+cursor: pointer;
+}
+
+.img:hover {
+opacity: 0.5;
+}
+
+p{
+font-weight: normal;
+}
+
+</style>
+
+<body>
+
+<div id="ul">
+<ul>
+  <li><a href="miniIndex.html">HOME</a></li>
+  <li><a href="miniStory.html">STORY</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">MENU</a>
+    <div class="dropdown-content">
+      <a href="miniJuice.html">음료</a>
+      <a href="miniDesrt.html">디저트</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">STORE</a>
+      <div class="dropdown-content">
+      <a href="miniStore.html">매장찾기</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">MY PAGE</a>
+      <div class="dropdown-content">
+      <a href="miniLog.html">로그인</a>
+	  <a href="miniMember.html">회원가입</a>
+    </div>
+  </li>
+<input type="button" class="button" value="가맹문의">
+</ul>
+</div>
+
+<section> <!--디저트-->
+<table>
+
+<tr>
+<th><a href="de1.html"><img src="./img/de1.png" class="img"></a>
+<p>팥빙수</p></th>
+<th><img src="./img/de2.png" class="img">
+<p>애플망고 빙수</p></th>
+<th><img src="./img/de3.png" class="img">
+<p>제주녹차 빙수</p></th>
+<th><img src="./img/de4.png" class="img">
+<p>생딸기 순우유 롤</p></th>
+<th><img src="./img/de5.png" class="img">
+<p>쿠키엔크림 케이크</p></th>
+</tr>
+
+<tr>
+<th><img src="./img/de6.png" class="img">
+<p>당근 치즈 케이크</p></th>
+<th><img src="./img/de7.png" class="img">
+<p>카라멜 시나몬 브레드</p></th>
+<th><img src="./img/de8.png" class="img">
+<p>비벼먹는 페스츄리 초콜릿</p></th>
+<th><img src="./img/de9.png" class="img">
+<p>비벼먹는 페스츄리 딸기</p></th>
+<th><img src="./img/de10.png" class="img">
+<p>생딸기 크림 소보로</p></th>
+</tr>
+
+
+</table>
+</section>
+
+<footer>
+	<br>
+	<span>주식회사 앤하우스</span><br>
+	<span>대표자 김대영</span><br>
+	<span>사업자등록번호 105-88-51247</span><br>
+	<span>서울시 강남구 강남대로 518 11층, 13층 (주)앤하우스</span><br>
+	<고객센터 1555-0000><br>
+	<span>Copyright© by Caffebene, All rights reserved.</span>
+</footer>
+
+</body>
+</html>
